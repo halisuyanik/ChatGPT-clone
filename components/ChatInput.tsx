@@ -44,7 +44,8 @@ function ChatInput({chatId}:Props) {
         })
     }
   return (
-    <div className="bg-gray-700/50  text-gray-400 rounded-lg text-sm ">
+    <div className="justify-center flex  text-gray-400 rounded-lg text-sm ">
+        <div className="lg:min-w-[48em]">
         <form onSubmit={sendMessage} className="p-5 space-x-5 flex">
             <div className="bg-[#40414F] flex  py-2 flex-grow md:py-3 md:pl-4 relative  rounded-md">
                 <input disabled={!session} className="bg-transparent sm:ml-2 text-white focus:outline-none flex-1  disabled:cursor-not-allowed disabled:text-gray-300" value={prompt} onChange={(e)=>setPrompt(e.target.value)} type="text"/>
@@ -55,7 +56,7 @@ function ChatInput({chatId}:Props) {
                 </button>
             </div>
         </form>
-        <div className="">
+        
 
         </div>
     </div>
